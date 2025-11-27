@@ -1,0 +1,310 @@
+/* Box Model fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* ------------ FOR ALL PAGES ------------ */
+body {
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    background-color: #222222;
+    color: #f4f4f6;
+}
+main {
+    margin: 1rem auto;
+    max-width: 1250px;
+    width: 95%;
+}
+/* Header styles */
+header {
+    font-family: "Roboto Condensed", sans-serif;
+    align-items: center;
+    background-color: #31e981;
+    color: #222222;
+}
+header h1 {
+    font-size: 50px;
+    margin: 0px;
+    padding: 40px 50px 6px;
+}
+.page_top {
+    display: flex;
+}
+.page_top p {
+    margin: 0px 0px 30px 50px;
+    font-size: 24px;
+}
+/* Navigation styles */
+nav {
+    margin: 0px;
+    margin-left: auto;
+}
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 24px;
+    margin: 0px;
+    margin-right: 50px;
+}
+/* Navigation buttons */
+.navbtn {
+    text-decoration: none;
+    color: #222222;
+}
+.btn {
+    color: #005a82;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.navbtn:hover, .navbtn:focus, .btn:hover, .btn:focus {
+    background-color: #005a82;
+    color: #f4f4f6;
+}
+.navbtn:active, .btn:active {
+    background-color: transparent;
+    color: #222222;
+}
+/* Footer styles */
+footer {
+    padding: 1px;
+    background-color: #31e981;
+    color: #222222;
+}
+footer p {
+    font-size: 16px;
+    margin-left: 1em;
+}
+/* Temporarily, this class will push the footer to the bottom of the page
+    until the page has enough content to fill a browser window */
+.temp_push {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+}
+
+/* ------------ HOME PAGE ------------ */
+.home_main {
+    max-width: 1600px;
+}
+.home_header, .home_bottom {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+.home_bottom {
+    margin-bottom: 50px;
+}
+/* Styles for the top of the Home page */
+.banner {
+    padding: 80px 50px;
+    text-align: center;
+    background-image: linear-gradient(#31e981, #005a82, #222222);
+}
+.banner h3 {
+    margin: 0px;
+    font-size: 36px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+/* Styles for the slideshow in the Home page */
+.slide_container {
+    position: relative;
+    margin-bottom: 50px;
+}
+.slide {
+    background-color: #f4f4f6;
+    color: #222222;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+}
+.slide h4 {
+    margin-top: 0px;
+    color: #005a82;
+    font-size: 28px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.slide_details {
+    display: flex;
+    gap: 40px;
+}
+.home_proj_img {
+    flex: 1 1 50%;
+    width: 100%;
+    height: 100%;
+}
+.home_proj_img img {
+    width: 100%;
+    height: 100%;
+}
+.home_proj {
+    flex: 1 1 50%;
+    text-align: left;
+    font-size: 18px;
+}
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    font-weight: bold;
+    background-color: #222222;
+    color: #f4f4f6;
+    font-size: 40px;
+    border-style: none;
+}
+.next {
+    right: 0px;
+}
+
+/* ------------ PORTFOLIO PAGE ------------ */
+/* Style for the table in Portfolio.html */
+table {
+    border: 2px solid #222222;
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: #222222;
+}
+td, th {
+    border: 2px solid #222222;
+    padding: 20px;
+}
+th {
+    background-color: #f4f4f6;
+}
+table caption {
+    text-align: left;
+    padding: 4px 4px 4px 0px;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f4f4f6;
+}
+tbody tr:nth-child(even) {
+    background-color: #e2e2e6;
+}
+
+/* ------------ CONTACT PAGE ------------ */
+/* CONTACT PAGE MAY OR MAY NOT BE ADDED BACK IN AT A LATER DATE */
+
+
+/* ------------ COLLEGE PAGE ------------ */
+.college_main {
+    background-color: #f4f4f6;
+    color: #222222;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.college_main h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    color: #005a82;
+}
+.college_main h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    color: #005a82;
+    margin-top: 60px;
+    font-size: 28px;
+}
+.college_main p {
+    margin: 40px 60px;
+}
+/* Aligning items in flex boxes */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.college_top {
+    flex: 1 1 60%;
+}
+.college_list {
+    flex: 1 1 20%;
+    margin-right: 60px;
+    background-color: #e2e2e6;
+    border: 1px solid #222222;
+}
+.college_list h5 {
+    font-size: 20px;
+    margin: 8px 0px 4px 8px;
+}
+.college_list ul {
+    margin: 0px 0px 10px 0px;
+}
+.item_img {
+    flex: 1 1 50%;
+    justify-content: center;
+    text-align: center;
+    background-color: #e2e2e6;
+    padding: 30px 0px;
+}
+.item_img figure img {
+    width: 100%;
+    height: 100%;
+}
+/* Video styles */
+.vid_fig {
+    margin: 0 auto;
+    padding: 40px 50px;
+    text-align: center;
+    background-color: #e2e2e6;
+}
+video {
+    width: 100%;
+    height: 100%;
+}
+.project_line {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #31e981;
+    margin-top: 50px;
+}
+.jump {
+    display: block;
+    padding: 40px;
+}
+.jump a {
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    color: #005a82;
+    padding: 0px;
+}
+.jump a:hover, .jump a:focus {
+    background-color: #005a82;
+    color: #f4f4f6;
+}
+
+/* Media queries to adjust certain elements depending on page size */
+@media screen and (max-width: 950px) {
+    .container {
+        display: block;
+    }
+    .college_list {
+        margin: 0px 40px 10px;
+    }
+    .page_top {
+        display: block;
+    }
+    nav ul {
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .slide_details {
+        flex-wrap: wrap;
+    }
+}
